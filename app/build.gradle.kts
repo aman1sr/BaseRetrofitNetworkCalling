@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.pahadi.mybasearch"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,7 +41,10 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
 
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
