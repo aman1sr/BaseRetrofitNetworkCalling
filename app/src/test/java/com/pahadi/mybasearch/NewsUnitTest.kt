@@ -17,7 +17,7 @@ import org.junit.Assert.*
  */
 
 @ExperimentalCoroutinesApi
-class NewsUnitTest {
+class NewsUnitTest { 
     @Test
     fun `GET newsTopHeadLine`() {
         runBlocking {
